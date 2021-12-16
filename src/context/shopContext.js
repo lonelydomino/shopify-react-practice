@@ -18,7 +18,7 @@ class ShopProvider extends Component {
     }
 
     createCheckout = async () => {
-
+        const checkout = await client.checkout.create()
     }
 
     fetchCheckout = async () => {
@@ -28,12 +28,15 @@ class ShopProvider extends Component {
     removeLineItem = async (lineItemIdsToRemove) => {
 
     }
-    fetchAllProducts = async () => {
 
+    fetchAllProducts = async () => {
+        const products = await client.product.fetchAll()
+        this.setState({products: products})
     }
 
     fetchProductWithHandle = async (handle) => {
-
+        const product = await client.product.fetchByHandle(handle)
+        this.setState({ product })
     }
 
     closeCart = () => {
@@ -56,11 +59,15 @@ class ShopProvider extends Component {
         return (
             <div>
                 <ShopContext.Provider>
-                    {}
+                    {this.props.children}
                 </ShopContext.Provider>
             </div>
         )
     }
 }
+
+const ShopConsumer = ShopContext.Consumer
+
+export { ShopContext, ShopConsumer }
 
 export default ShopProvider
