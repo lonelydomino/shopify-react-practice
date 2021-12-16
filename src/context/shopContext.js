@@ -31,7 +31,7 @@ class ShopProvider extends Component {
         this.setState({ checkout: checkout })
     }
 
-    fetchCheckout = async (checkoutId) => {
+    fetchCheckout = (checkoutId) => {
         client.checkout
         .fetch(checkoutId)
         .then((checkout) => {
@@ -74,7 +74,17 @@ class ShopProvider extends Component {
 
         return (
             <div>
-                <ShopContext.Provider>
+                <ShopContext.Provider 
+                value={{
+                    ...this.state,
+                    fetchAllProducts: this.fetchAllProducts,
+                    fetchProductWithHandle: this.fetchProductWithHandle,
+                    addItemToCheckout: this.addItemToCheckout,
+                    closeCart: this.closeCart,
+                    openCart: this.openCart,
+                    closeMenu: this.closeMenu,
+                    openMenu: this.openMenu
+                    }}>
                     {this.props.children}
                 </ShopContext.Provider>
             </div>
