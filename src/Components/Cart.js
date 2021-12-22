@@ -8,7 +8,8 @@ import {
     DrawerHeader,
     DrawerOverlay,
     DrawerContent,
-    DrawerCloseButton 
+    DrawerCloseButton,
+    Button 
 } from '@chakra-ui/react'
 
 const Cart = () => {
