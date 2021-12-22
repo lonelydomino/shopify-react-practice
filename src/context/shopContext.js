@@ -54,11 +54,12 @@ class ShopProvider extends Component {
     }
 
     closeCart = () => {
+        this.setState({isCartOpen: false})
 
     }
 
     openCart = () => {
-
+        this.setState({isCartOpen: true})
     }
 
     closeMenu = () => {

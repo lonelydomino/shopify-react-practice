@@ -17,9 +17,9 @@ const Cart = () => {
     return (
         <div>
             <Drawer
-                isOpen={isOpen}
+                isOpen={isCartOpen}
                 placement="right"
-                onClose={onClose}
+                onClose={closeCart}
                 >
                    <DrawerOverlay>
                        <DrawerContent>
