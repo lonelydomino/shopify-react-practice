@@ -39,6 +39,16 @@ class ShopProvider extends Component {
         })
     }
 
+    addItemToCheckout = async (variantId, quantity) => {
+        const lineItemsToAdd = [
+            {
+                variantId,
+                quantity: parseInt(quantity, 10),
+            }
+        ]
+        const checkout = await client.checkout.addLineItems()
+    }
+
     removeLineItem = async (lineItemIdsToRemove) => {
 
     }
