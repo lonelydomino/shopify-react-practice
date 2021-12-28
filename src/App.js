@@ -2,6 +2,7 @@ import Home from './pages/Home'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import ProductPage from './pages/ProductPage'
 import NavBar from './components/NavBar'
+import NavMenu from './components/NavMenu'
 import Cart from './components/Cart'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Router>
         <NavBar/>
         <Cart />
+        <NavMenu />
         <Switch>
           <Route path="/" exact>
             <Home />
