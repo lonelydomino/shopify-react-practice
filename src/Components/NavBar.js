@@ -14,8 +14,8 @@ const NavBar = () => {
             <Link to="/"><Image cursor="pointer" src="https://cdn.shopify.com/s/files/1/0472/5705/9496/files/Logologo_1.svg?v=1610055540" w={100} h={100}/></Link>
             <Box>
                 <Icon cursor="pointer" fill="white" as={MdShoppingBasket} w={30} h={30} onClick={()=> openCart()}></Icon>
+                <Badge backgroundColor="#FF388D" borderRadius="50%">{checkout.lineItems?.length}</Badge>
             </Box>
-            <Badge backgroundColor="#FF388D" borderRadius="50%">{checkout.lineItems?.length}</Badge>
         </Flex>
     )
 }
