@@ -4,9 +4,9 @@ import { Grid, Box, Text, Image, VStack } from '@chakra-ui/react'
 
 const Footer = () => {
     return (
-        <div>
+        <Box>
             
-        </div>
+        </Box>
     )
 }
 

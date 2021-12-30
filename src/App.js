@@ -4,7 +4,7 @@ import ProductPage from './pages/ProductPage'
 import NavBar from './components/NavBar'
 import NavMenu from './components/NavMenu'
 import Cart from './components/Cart'
-
+import Footer from './components/Footer'
 function App() {
   return (
     <div className="App">
@@ -21,7 +21,7 @@ function App() {
             <ProductPage />
           </Route>
         </Switch>
-        <p>Footer</p>
+        <Footer />
       </Router>
     </div>
   );
