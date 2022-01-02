@@ -3,9 +3,9 @@ import { Box, Heading, Text, Center } from '@chakra-ui/react'
 
 const RichText = ({ heading, text }) => {
     return (
-        <Box p="4rem">
+        <Box p="1rem">
             <Center display="flex" flexDir="column" textAlign="center">
-                <Heading py="4rem">
+                <Heading py="2.5rem">
                     {heading && heading}
                 </Heading>
                 <Text pb="2rem">
