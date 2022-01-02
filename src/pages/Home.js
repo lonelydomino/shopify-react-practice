@@ -30,6 +30,8 @@ const Home = () => {
                     </Link>
                 ))}
             </Grid>
+            <RichText heading="Treat yourself!"/>
+
            <ImageWithText text="stuff stuff stuff stuff" reverse image="https://cdn.shopify.com/s/files/1/0472/5705/9496/files/premium-bath-bombs.jpg?v=1610066758" heading="Heading"/>
            <ImageWithText text="stuff stuff stuff stuff"  image="https://cdn.shopify.com/s/files/1/0472/5705/9496/files/premium-bath-bombs.jpg?v=1610066758" heading="Heading"/>
            <ImageWithText text="stuff stuff stuff stuff" reverse image="https://cdn.shopify.com/s/files/1/0472/5705/9496/files/premium-bath-bombs.jpg?v=1610066758" heading="Heading"/>
